@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="800" viewBox="0 0 1440 800">
+  <defs>
+    <clipPath id="clip-background">
+      <rect width="1440" height="800"/>
+    </clipPath>
+  </defs>
+  <g id="background" clip-path="url(#clip-background)">
+    <rect width="1440" height="800" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1442" height="803" transform="translate(-2 -3)" fill="#1c2b52"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="797.528" height="298.504" transform="translate(628.236 645)" fill="none"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="763.003" height="797.099" transform="translate(1412.257 83.103)" fill="none"/>
+    <path id="Path_2" data-name="Path 2" d="M0,517c44.855-25.5,108.592-19.035,160.857-34.668,36.08-10.792,66.054-32.621,81.525-59.372,22.7-39.243,13.89-84.629,27.394-126.195,11.363-34.98,39.069-66.839,77.154-88.715C384.942,186.221,431.5,174.7,472.916,156.7s80.255-46.354,83.884-82.189H7.912Z" transform="translate(-202.887 -117.005)" fill="#4546a0"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="622.8" height="607" transform="translate(-115.887 181.525)" fill="none"/>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="2291.15" height="1273.897" transform="translate(-115.887 83.103)" fill="none"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="2291.147" height="1273.897" transform="translate(-115.887 83.103)" fill="none"/>
+    <path id="Path_1" data-name="Path 1" d="M1077.972,0c-34.761,69.53,7.129,153.662,69.2,203.381S1288.365,279.707,1358.6,318.9c98.137,54.758,182.823,141.774,199.28,247.536,9.3,59.75-2.321,125.734,32.3,176.617,20.359,29.927,55.861,50.4,93.729,54.048l144.49-619.585Z" transform="matrix(0.978, -0.208, 0.208, 0.978, -322.109, -57.179)" fill="#4546a0"/>
+    <path id="Path_3" data-name="Path 3" d="M124.483,866.022c56.772-2.112,97.9,18.893,146.461,30.171,68.88,16,158.255,12.193,234.554,2.046s147.216-26,225.737-33.359C850,853.755,978.08,863.327,1086.353,884.817c97.519,19.355,188.381,48.839,298.529,50.342,61.592.841,128.827-7,181.6,5h-1442Z" transform="translate(-126.483 -140.157)" fill="#4546a0"/>
+  </g>
+</svg>
