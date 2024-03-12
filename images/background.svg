@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="750" viewBox="0 0 1440 750">
+  <defs>
+    <clipPath id="clip-background">
+      <rect width="1440" height="750"/>
+    </clipPath>
+  </defs>
+  <g id="background" clip-path="url(#clip-background)">
+    <rect width="1440" height="750" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1442" height="803" transform="translate(-2 -3)" fill="#1c2b52"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="763.003" height="797.099" transform="translate(1412.257 83.103)" fill="none"/>
+    <path id="Path_2" data-name="Path 2" d="M0,492c44.855-24.058,108.592-17.96,160.857-32.71,36.08-10.182,66.054-30.778,81.525-56.017,22.7-37.026,13.89-79.847,27.394-119.065,11.363-33,39.069-63.062,77.154-83.7,38.013-20.6,84.571-31.468,125.987-48.458s80.255-43.735,83.884-77.546H7.912Z" transform="translate(-202.887 -117.005)" fill="#4546a0"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="622.8" height="607" transform="translate(-115.887 181.525)" fill="none"/>
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="2291.15" height="1273.897" transform="translate(-115.887 83.103)" fill="none"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="2291.147" height="1273.897" transform="translate(-115.887 83.103)" fill="none"/>
+    <path id="Path_1" data-name="Path 1" d="M1078.681,0c-36.72,63.156,7.53,139.578,73.1,184.739s149.144,69.33,223.335,104.927c103.666,49.739,193.123,128.779,210.508,224.847,9.821,54.274-2.451,114.21,34.115,160.428,21.506,27.184,59.008,45.78,99.01,49.094l152.63-562.794Z" transform="matrix(0.978, -0.208, 0.208, 0.978, -322.109, -4.046)" fill="#4546a0"/>
+    <path id="Path_3" data-name="Path 3" d="M124.483,867.408c59.9-2.616,103.294,23.4,154.538,37.363C351.7,924.58,446,919.87,526.509,907.305s155.334-32.2,238.185-41.311c125.31-13.778,260.457-1.924,374.7,24.689,102.9,23.969,198.769,60.481,314.991,62.343,64.989,1.041,135.931-8.666,191.615,6.189H124.483Z" transform="translate(-124.483 -209.215)" fill="#4546a0"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="797.528" height="298.504" transform="translate(628.236 645)" fill="none"/>
+  </g>
+</svg>
