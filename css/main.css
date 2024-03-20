@@ -38,45 +38,58 @@ h1 {
     margin: 50px 15px 0 15px;
 }
 
-#play-zone-1 {
-    margin: 20px 0px 0px 300px;
+.play-zone {
+    position: relative;
+    z-index: 1;
 }
 
-#play-zone-2 {
-    margin: 0px 0px 0px 550px;
+#play-zone-1 {
+    margin: 20px 0px 0px 180px;
+}
+
+.draggable-svg img {
+    position: absolute;
+    z-index: 2;
 }
 
 #violin {
-    position: absolute;
-    top: 40%;
+    top: 70%;
 }
 
 #drum {
-    position: absolute;
-    top: 80%;
-    left: 15%;
+    top: 100%;
+    left: 17%;
 }
 
 #trump {
-    position: absolute;
     top: 93%;
     left: 35%;
 }
 
 #tamb {
-    position: absolute;
-    top: 95%;
+    top: 100%;
     left: 55%;
 }
 
 #trump-2 {
-    position: absolute;
-    top: 73%;
+    top: 90%;
     left: 70%;
 }
 
 #guitar {
-    position: absolute;
-    top: 40%;
+    top: 70%;
     left: 85%;
 }
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.spinning {
+    animation: spin 2s linear infinite;
+  }
