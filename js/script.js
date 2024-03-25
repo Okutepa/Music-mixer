@@ -1,5 +1,5 @@
 const draggableSVGs = document.querySelectorAll('.draggable-svg img');
-const playZones = document.querySelectorAll('.play-zone');
+const playZones = document.querySelectorAll('.dropzone');
 const audioElement = document.getElementById('play-sound');
 const audioSources = {};
 
@@ -40,37 +40,25 @@ function drop(event) {
     event.preventDefault();
     
     const trackRef = event.dataTransfer.getData('text/plain');
-    const playZoneId = event.target.closest('.play-zone').id;
+
+    // Create a new img element for the dropped track
+    const droppedSVG = document.createElement('img');
+    droppedSVG.src = `images/${trackRef}.svg`;
+    droppedSVG.classList.add('spinning'); // Add spinning class
+    event.target.appendChild(droppedSVG);
 
     // Create a new audio element for the dropped track
     const audioSrc = `audio/${trackRef}.mp3`;
     const newAudio = new Audio(audioSrc);
-    
-    // Play the new audio
     newAudio.play();
 
     // Store the audio element in the corresponding play zone
+    const playZoneId = event.currentTarget.id;
     if (!audioSources[playZoneId]) {
         audioSources[playZoneId] = [newAudio];
     } else {
         audioSources[playZoneId].push(newAudio);
     }
-
-    // Create a smaller version of the dropped SVG
-    const droppedSVG = document.createElementNS('http://www.w3.org/2000/svg', 'image');
-    droppedSVG.setAttributeNS(null, 'href', `images/${trackRef}.svg`); // Adjust the path accordingly
-    droppedSVG.setAttributeNS(null, 'width', '50px'); // Set the width of the dropped SVG
-
-    // Calculate the height to maintain the aspect ratio
-    const originalWidth = 200; 
-    const originalHeight = 300; 
-    const scaledHeight = (50 / originalWidth) * originalHeight;
-    droppedSVG.setAttributeNS(null, 'height', `${scaledHeight}px`); 
-
-    droppedSVG.setAttributeNS(null, 'class', 'spinning'); 
-
-    // Append the dropped SVG to the play zone
-    event.target.appendChild(droppedSVG);
 }
 
 function playAudio(trackRef) {

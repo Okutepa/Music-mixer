@@ -38,47 +38,49 @@ h1 {
     margin: 50px 15px 0 15px;
 }
 
-.play-zone {
+.dropzone-container {
+    margin: 0, 0px, 0, 50px;
+    width: fit-content;
+}
+
+.dropzone {
+    width: 150px;
+    height: 120px;
+    display: inline-block;
+    align-items: center;
     position: relative;
-    z-index: 1;
+    background-image: url(../images/dropzone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-#play-zone-1 {
-    margin: 20px 0px 0px 180px;
-}
-
-.draggable-svg img {
+.dropzone img {
+    width: 50px;
+    height:75px;
+    display:block;
     position: absolute;
-    z-index: 2;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
 
-#violin {
-    top: 70%;
+.drag {
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+	background-color: #000;
+    border-radius: 30%;
+    align-items: center;
+    position: relative;
 }
 
-#drum {
-    top: 100%;
-    left: 17%;
-}
-
-#trump {
-    top: 93%;
-    left: 35%;
-}
-
-#tamb {
-    top: 100%;
-    left: 55%;
-}
-
-#trump-2 {
-    top: 90%;
-    left: 70%;
-}
-
-#guitar {
-    top: 70%;
-    left: 85%;
+.drag img {
+    width: auto;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes spin {

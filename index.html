@@ -15,69 +15,67 @@
         </div>
     </header>
 
-    <div id="play-zone-1" class="play-zone">
-        <img src="images/dropzone.svg" width="150" height="120"></img>
-        <img src="images/dropzone.svg" width="150" height="120"></img>
-        <img src="images/dropzone.svg" width="150" height="120"></img>
-        <img src="images/dropzone.svg" width="150" height="120"></img>
-        <img src="images/dropzone.svg" width="150" height="120"></img>
-        <img src="images/dropzone.svg" width="150" height="120"></img>
+    <div class="dropzone-container grid-con">
+    <div class="dropzone l-col-start-1 l-col-span-2"></div>
+    <div class="dropzone l-col-start-3 l-col-span-2"></div>
+    <div class="dropzone l-col-start-5 l-col-span-2"></div>
+    <div class="dropzone l-col-start-7 l-col-span-2"></div>
+    <div class="dropzone l-col-start-9 l-col-span-2"></div>
+    <div class="dropzone l-col-start-11 l-col-span-2"></div>
     </div>
 
-    <div class="draggable-svg">
+    <div class="draggable-svg grid-con">
+        <div class="drag l-col-start-1 l-col-span-2">
         <img
             data-trackref="tunnun-1" 
             id="violin" 
             src="images/tunnun-1.svg" 
-            width="200" 
-            height="300" 
             draggable="true">
         </img>
-
+        </div>
+        
+        <div class="drag l-col-start-3 l-col-span-2">
         <img
             data-trackref="drum-kick" 
             id="drum" 
-            src="images/drum-kick.svg" 
-            width="200" 
-            height="220" 
+            src="images/drum-kick.svg"  
             draggable="true">
         </img>
+        </div>
 
+        <div class="drag l-col-start-5 l-col-span-2">
         <img
             data-trackref="flute" 
             id="trump" 
-            src="images/flute.svg" 
-            width="200" 
-            height="280" 
+            src="images/flute.svg"  
             draggable="true">
         </img>
+        </div>
 
+        <div class="drag l-col-start-7 l-col-span-2">
         <img 
             data-trackref="shikishi-2"
             id="tamb" 
-            src="images/shikishi-2.svg" 
-            width="100" 
-            height="250" 
+            src="images/shikishi-2.svg"  
             draggable="true">
         </img>
+        </div>
 
+        <div class="drag l-col-start-9 l-col-span-2">
         <img 
             data-trackref="piano"
-            id="trump-2" 
             src="images/piano.svg" 
-            width="150" 
-            height="280" 
             draggable="true">
         </img>
+        </div>
 
+        <div class="drag l-col-start-11 l-col-span-2">
         <img
             data-trackref="shikishi" 
-            id="guitar" 
             src="images/shikishi.svg" 
-            width="150" 
-            height="300" 
             draggable="true">
         </img>
+        </div>
     </div>
 
     <audio id="play-sound" src="audio/drum-kick.mp3"></audio>

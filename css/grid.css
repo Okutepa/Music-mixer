@@ -91,7 +91,7 @@
     .grid-con { 
        display: grid; 
        grid-template-columns: repeat(12, minmax(0, 1fr));
-       grid-column-gap: 30px;
+       grid-column-gap: 10px;
        padding-left: 15px;
        padding-right: 15px;
     }
