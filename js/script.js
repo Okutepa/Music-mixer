@@ -1,27 +1,17 @@
 const draggableSVGs = document.querySelectorAll('.draggable-svg img');
 const playZones = document.querySelectorAll('.dropzone');
-const audioElement = document.getElementById('play-sound');
+const playSound = document.querySelector('play-sound');
 const audioSources = {};
 
-function playAudio(trackRefs) {
-    // Stop any previous audio
-    audioElement.pause();
-    audioElement.currentTime = 0;
+function playAudio() {
+    playSound.play();
+}
 
-    // Create an array to store audio elements
-    const audioElements = [];
-
-    // Iterate over each track reference and create an audio element for it
-    trackRefs.forEach(trackRef => {
-        const audioSrc = `audio/${trackRef}.mp3`;
-        const audio = new Audio(audioSrc);
-        audioElements.push(audio);
-    });
-
-    // Play all audio elements simultaneously
-    audioElements.forEach(audio => {
-        audio.play();
-    });
+function loadAudio() {
+    let newSrc = `audio/${this.dataset.trackref}.mp3`;
+    playSound.src = newSrc;
+    playSound.load();
+    playAudio();
 }
 
 function dragStart(event) {
@@ -59,12 +49,6 @@ function drop(event) {
     } else {
         audioSources[playZoneId].push(newAudio);
     }
-}
-
-function playAudio(trackRef) {
-    const audioSrc = `audio/${trackRef}.mp3`;
-    audioElement.src = audioSrc;
-    audioElement.play();
 }
 
 
